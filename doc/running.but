@@ -1,0 +1,239 @@
+\C{running} Running Halibut
+
+\I{running Halibut}In the simplest case, running Halibut is very
+easy. You provide a set of input files on its \i{command line}, and
+it produces a set of output files.
+
+\c $ halibut intro.but gettingstarted.but reference.but index.but
+\e   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+This will generate a large set of \i{output files}:
+
+\b \i\c{output.txt} will be a \i{plain text} version of the input
+document.
+
+\b \i\c{output.chm} will be a Windows \i{HTML Help} version of the
+same thing. (Note that to do this Halibut does not require any
+external software such as a \i{Help compiler}. It \e{directly}
+generates Windows HTML Help files, and therefore it doesn't need to be
+run on Windows to do so: it can generate them even when run from an
+automated script on a Unix machine.)
+
+\b \i\c{output.hlp} and \i\c{output.cnt} will be an old-style
+\i{Windows Help} version of the same thing. (Most of the text is in
+\c{output.hlp}; \c{output.cnt} contains additional contents data
+used by the Windows help topic selector. If you lose the latter, the
+former should still be usable, but it will look less modern.)
+
+\b \c{output.1} will be a Unix \i{\cw{man} page}.
+
+\b The set of files \c{*.html} will contain an \i{HTML} version of
+the document. If you have configured Halibut to generate more than
+one HTML file (the default), then the file \c{Contents.html} will be
+the topmost one that users should be directed to initially. If you
+have configured Halibut to generate a single file, it will be called
+\c{Manual.html}.
+
+\b \c{output.info}, and some additional files \c{output.info\-1},
+\c{output.info\-2} etc., will be files suitable for use with GNU
+\c{info}.
+
+\b \c{output.pdf} will be a printable PDF manual.
+
+\b \c{output.ps} will be a printable PostScript manual.
+
+\H{running-options} \ii{Command-line options}
+
+Halibut supports command-line options in case you don't want to use
+all of Halibut's \i{output formats}, or you want to configure the
+names of your \i{output files}, or you want to supply additional
+configuration on the command line. The supported options are listed
+here.
+
+Firstly, there are options which indicate which of the output
+formats you want Halibut to generate:
+
+\dt \i\cw{--text}[\cw{=}\e{filename}]
+
+\dd Specifies that you want to generate plain text output. You can
+optionally specify a file name (e.g. \c{\-\-text=myfile.txt}), in
+which case Halibut will change the name of the output file as well.
+
+\dt \i\cw{--html}[\cw{=}\e{filename}]
+
+\dd Specifies that you want to generate HTML output. You can
+optionally specify a file name (e.g. \c{\-\-html=myfile.html}), in
+which case Halibut will change the name of the output file as well.
+Specifying a file name here will also cause the HTML to be output in
+\e{only} one file, instead of the usual behaviour of producing
+multiple files with links between them. If you want to produce
+multiple files and configure their names, you will need to use the
+more complete file name configuration directives given in
+\k{output-html-file} (although you may want to do so on the command
+line, using the \c{-C} option).
+
+\dt \i\cw{--xhtml}[\cw{=}\e{filename}]
+
+\dd Synonym for \c{--html}.
+
+\dt \i\cw{--chm}[\cw{=}\e{filename}]
+
+\dd Specifies that you want to generate Windows HTML Help
+output. You can optionally specify a file name (e.g.
+\c{\-\-chm=myfile.chm}), in which case Halibut will change the
+name of the output file as well.
+
+\dt \i\cw{--winhelp}[\cw{=}\e{filename}]
+
+\dd Specifies that you want to generate old-style Windows Help
+output. You can optionally specify a file name (e.g.
+\c{\-\-winhelp=myfile.hlp}), in which case Halibut will change the
+name of the output file as well.
+
+\lcont{
+
+Your output file name should end with \c{.hlp}; if it doesn't,
+Halibut will append it. Halibut will also generate a contents file
+(ending in \c{.cnt}) alongside the file name you specify.
+
+}
+
+\dt \i\cw{--whlp}[\cw{=}\e{filename}]
+
+\dd Synonym for \c{\-\-winhelp}.
+
+\dt \i\cw{--hlp}[\cw{=}\e{filename}]
+
+\dd Synonym for \c{\-\-winhelp}.
+
+\dt \i\cw{--man}[\cw{=}\e{filename}]
+
+\dd Specifies that you want to generate \cw{man} page output. You
+can optionally specify a file name (e.g. \c{\-\-man=myfile.5}), in
+which case Halibut will change the name of the output file as well.
+
+\dt \i\cw{--info}[\cw{=}\e{filename}]
+
+\dd Specifies that you want to generate GNU \c{info} output. You can
+optionally specify a file name (e.g. \c{\-\-info=myfile.info}), in
+which case Halibut will change the name of the output file as well.
+
+\lcont{
+
+Unless the \c{info} output format is configured not to (see
+\k{output-info}), Halibut will divide the \c{info} output into many
+small files. The extra files will have numeric suffixes on their
+names; so, for example, \c{output.info} might be accompanied by
+additional files \c{output.info\-1}, \c{output.info\-2} and so on.
+
+}
+
+\dt \i\cw{--pdf}[\cw{=}\e{filename}]
+
+\dd Specifies that you want to generate PDF output. You
+can optionally specify a file name (e.g. \c{\-\-pdf=myfile.pdf}), in
+which case Halibut will change the name of the output file as well.
+
+\dt \i\cw{--ps}[\cw{=}\e{filename}]
+
+\dd Specifies that you want to generate PostScript output. You
+can optionally specify a file name (e.g. \c{\-\-ps=myfile.ps}), in
+which case Halibut will change the name of the output file as well.
+
+If you do not specify any of the above options, Halibut will simply
+produce \e{all} of its output formats.
+
+Also, there is an option which allows you to specify an arbitrary
+\i\c{\\cfg} configuration directive (see \k{input-config}):
+
+\dt \i\cw{-C}\e{config-directive}\cw{:}\e{value}[\cw{:}\e{value}...]
+
+\dd The text following \c{\-C} is expected to be a colon-separated
+list of strings. (If you need a literal colon, you can escape it
+with a backslash: \c{\\:}. If you need a literal \e{backslash}, you
+can do the same: \c{\\\\}.) These strings are used as the parts of a
+\c{\\cfg} directive. So, for example, the option
+
+\lcont{
+
+\c -Ctext-section-align:2:leftplus
+
+will translate into the configuration directive
+
+\c \cfg{text-section-align}{2}{leftplus}
+
+(Note that your shell may also take an interest in backslashes,
+particularly under Unix. You may find that the backslash with which
+you escape a colon must be doubled in order to make the shell pass
+it to Halibut at all, and to pass a doubled backslash to Halibut you
+might have to type four backslashes on your shell command line. This
+is not part of Halibut's own behaviour, and it cannot do anything
+about it.)
+
+Configuration directives created in this way take effect after all
+other input has been processed. (In most cases, this has the effect of
+overriding any other instances of the directive in the input.)
+
+}
+
+The options which set the output file names actually work by
+implicitly generating these configuration directives. When you
+specify \c{\-\-text=myfile.txt}, for example, Halibut treats it
+identically to \c{\-\-text \-Ctext-filename:myfile.txt}. The Windows
+Help and man page formats work similarly. HTML is slightly
+different, since it also arranges for single-file output if you pass
+a filename to \c{\-\-html}; so \c{\-\-html=myfile.html} is equivalent to
+\c{\-\-html \-Chtml-single-filename:myfile.html \-Chtml-leaf-level:0}.
+(See \k{output} for explanations of all these configuration
+directives.)
+
+In addition to these, there are also a few other options:
+
+\dt \i\cw{--input-charset}\cw{=}\e{charset}
+
+\dd Changes the default assumed \i{character set} for all input files from
+ASCII to something else. (\cw{\-Cinput-charset} cannot be used for
+this, as \cw{\-C} directives are processed after all other input, so
+wouldn't affect any files.)
+
+\lcont{
+
+Any \cw{\\cfg\{input-charset\}} directives within input files override
+this option.
+
+See \k{input-config} for more information about the input character set.
+
+}
+
+\dt \I{character sets, enumerating}\i\cw{--list-charsets}
+
+\dd List character sets known to Halibut.
+
+\dt \i\cw{--list-fonts}
+
+\dd List fonts known to Halibut, both those it intrinsically knows about
+and those found in its input files.
+
+\dt \i\cw{--help}
+
+\dd Print a brief help message and exit immediately. (Don't confuse
+this with \c{\-\-winhelp}!)
+
+\dt \i\cw{--version}
+
+\dd Print information about Halibut's version number and exit
+immediately.
+
+\dt \i\cw{--licence}
+
+\dd Display Halibut's licence (see also \k{licence}) and exit
+immediately.
+
+\dt \cw{--license}
+
+\dd US English alternative spelling of \c{\-\-licence}.
+
+\dt \i\cw{--precise}
+
+\dd Report column numbers as well as line numbers when reporting
+errors in the Halibut input files.

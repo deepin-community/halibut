@@ -1,0 +1,3 @@
+misc/halibut.st usr/share/enscript/hl
+misc/halibut.vim usr/share/vim/addons/syntax
+debian/halibut.yaml usr/share/vim/registry

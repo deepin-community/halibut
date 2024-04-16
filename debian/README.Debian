@@ -1,0 +1,19 @@
+Halibut for Debian
+------------------
+
+In accordance with Debian's Vim policy, which requires that addons be
+switched off by default since there is a cost to loading each addon, the
+halibut package does not enable Vim syntax highlighting by default.  To do
+so, install the vim-addon-manager package and run the following command as
+the user who wishes to use it:
+
+  vim-addons install halibut
+
+Alternatively, you can symlink /usr/share/vim/addons/syntax/halibut.vim into
+the ~/.vim/syntax/ directory (create it if it doesn't exist).
+
+(Note that currently you need to use ':setf halibut' in Vim as well after
+opening the file; .but files are not automatically detected as being Halibut
+documentation.)
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 20 Feb 2010 01:22:26 +0000
