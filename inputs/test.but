@@ -1,0 +1,373 @@
+\define{eur} \u20AC{EUR }
+
+\title Halibut: A Test Document With A Stupidly Long Title (worth \eur\.1000)
+Just To See If Wrapping Titles Works OK. In Fact This Title Will Span Three
+Lines, Not Just Two. How's That For Ludicrous?  More than that, though,
+we'd like to make it more than 255 characters long so that the PostScript
+backend has to treat it specially in order to pass it to pdfmark.
+
+\cfg{xhtml-leaf-smallest-contents}{2}
+\cfg{xhtml-leaf-contains-contents}
+{true}
+\cfg{info-dir-entry}{Sillinesses}{test.but}{Halibut test document}
+\cfg{info-dir-entry}{Florbles}{test.but}{Subsection of Halibut test
+document}{sub-sub}
+\cfg{info-section-underline}{2}{~}
+\cfg{info-charset}{utf-8}
+\cfg{man-headnumbers}{true}
+
+\cfg{contents}{Contents - edited title}
+\cfg{index}{Index - also edited title}
+
+This paragraph is not labelled \q{preamble}, but should still appear
+as it.
+
+\preamble This manual is a small joke effort, designed to use every
+feature \#{ comment } that Halibut's input format supports. Creation
+date \date{%Y.%m.%d} (default format is \date).
+
+\c Here is a code paragraph in the preamble, just to stress that all
+\c things are possible. Ooh!
+
+\copyright Copyright 1999 Simon \#{second comment}Tatham. All rights
+reserved.
+
+Here's another \i{preamble paragraph}, which goes after the copyright.
+
+\define{metacoopt} [this is a nested,
+multi-line macro, talking about \coopt
+a bit]
+
+\define{coopt} co\u00F6{-o}pt
+
+\versionid Arbitrary version id text
+
+\C{ch\\ap} First chapter title; for similar wrapping reasons this
+chapter title will be ludicrously long. I wonder how much more
+chapter title I can write before feeling silly.
+
+This is a para\#{another{} comment}graph of text. It
+has line\#{yet another one} breaks in   between words, multiple
+  spaces (ignored), \e{emphasised text} and \s{strong text} as well as \c{code
+fragments}.
+
+\#{This is an inline comment alone in a paragraph.}
+
+\cw{This} is weak code; \cq{this} is quoted code. And \k{head}
+contains some other stuff. \K{subhead} does too.
+
+To test the man page back end:
+
+.Directive
+
+'Directive
+
+\cw{.Directive}
+
+\cw{'Directive}
+
+\\Sping\\Spong\\Spoing
+
+\H{head} First section title (very long again, no prizes for
+guessing the reason why this time, and here's yet more text to pad
+it out to three lines of output)
+
+\cfg{winhelp-topic}{M359HPEHGW}
+
+Here's a code paragraph:
+
+\c No leading spaces
+\c  One leading space
+\c Two blank lines follow this one.
+\c
+\c
+\c Two blank lines precede this one.
+\c   Two leading spaces
+\c We can use \ { and } with impunity here.
+\c We can use discretionary bold and italic in code paragraphs!
+\e                          bbbb     iiiiii
+\c Isn't that ludicrous?
+\c 
+\c man page tricky characters: command -o 'quoted' -o `backticks`
+
+This is a list:
+
+\b Ooh.
+
+\b Aah.
+
+\lcont{
+
+This bulletted list contains a list continuation. This is an
+additional paragraph, or more than one, indented at the same level
+as the list items, and able to contain nested sublists and other
+features. For example, here's a code paragraph:
+
+\c spingle:~$ whoami
+\c spoggler
+
+And here's a sublist. Numbered, just for variety.
+
+\n One.
+
+\lcont{
+
+\n 1a.
+
+\n 1b.
+
+\lcont{
+\c Code
+\c Paragraph
+}
+
+\n 1c.
+
+\lcont{This is an even sillier one: a continuation of a list item in
+a continuation of a list item in a continuation of a list item!}
+
+}
+
+\n Two.
+
+\n Threeeee!
+
+}
+
+\b Eek.
+
+This is a horizontal rule:
+
+\rule
+
+This is a numbered list:
+
+\n Ooh.
+
+\n{keyword} Aah.
+
+\n Eek. \q{Aah} is point \k{keyword}.
+
+This is a description list:
+
+\dt FISH
+
+\dd A piscine creature, often to be found swimming aimlessly around
+in the sea eating things and not contributing to the global economy.
+
+\lcont{
+
+Here's another of those funky list continuation things, just to keep
+Halibut on its toes.
+
+}
+
+\dt BADGER
+
+\dd A non-piscine creature, often to be found snuffling around on
+land, not contributing to the global economy, and not even swimming
+to make up for it. I don't know. These mammals. Pa-thetic.
+
+\dt "SAUSAGE SALESMAN"
+
+\dd An exemplary contributor to the global economy. Unless he's CMOT
+Dibbler.
+
+This is a much more interesting description list, testing
+consecutive \c{\\dt}s and consecutive \c{\\dd}s:
+
+\dt One
+
+\dt Two
+
+\dt Three
+
+\dd Ay
+
+\dt Four
+
+\dd Bee
+
+\dd Cee
+
+\dd Dee
+
+A-paragraph-full-of-hyphens-to-test-the-idea-that-word-wrapping-can-happen-somewhere-in-all-this-hyphenatory-nonsense.
+
+A\-paragraph\-full\-of\-nonbreaking\-hyphens\-to\-test\-the\-idea\-that\-word\-wrapping\-misses\-them.
+
+A\_paragraph\_full\_of\_nonbreaking\_spaces\_to\_test\_the\_idea\_that\_word\_wrapping\_misses\_them\_too.
+
+Use of macros: let's talk about \coopt. And about \coopt some more.
+And a nested macro: \metacoopt.
+
+A slightly more difficult macro: \eur\.2500.
+
+Test of input character set switching.
+
+\n 8859 character in ASCII mode: expect nothing useful. [coöpt]
+
+\cfg{input-charset}{ISO-8859-1}
+
+\n 8859 character in 8859 mode: expect the right thing. [coöpt]
+
+\cfg{input-charset}{UTF-8}
+
+\n 8859 character in UTF-8 mode: expect the wrong thing. [coöpt]
+
+\cfg{silliness}{coÃ¶pt}
+
+\n UTF-8 sequence in UTF-8 mode: expect the right thing again. [coÃ¶pt]
+
+\cfg{input-charset}{ASCII}
+
+Back to ASCII again.
+
+Oh, while I'm here: some special characters. The \\, \{ and \}
+characters, to be precise. And their code equivalents, \c{\\},
+\i\c{\{}, \c{\}}.  The ` and ' characters (grave and apostrophe)
+are special in some output formats.
+
+Now let's exercise the paper backends a little.  This is the entire
+Adobe Standard Latin character set, which should be enough to cause
+us to need to encode the main font twice:
+
+\cfg{input-charset}{ISO-8859-1}
+
+A Æ Á Â Ä À Å Ã B C Ç D E É Ê Ë È Ð F G H I Í Î Ï Ì J K L \u0141 M N Ñ O Ó Ô Ö
+\u0152 Ò Ø Õ P Q R S \u0160 T Þ U Ú Û Ü Ù V W X Y Ý \u017d
+a á â ´ ä æ à & å ^ ~ * @ ã b \\ | \{ \} [ ] ¦ \u2022
+c \u02c7 ç ¸ ¢ \u02c6 : , © ¤ d \u2020 \u2021 ° ¨ ÷ $ \u02d9 \u0131
+e é ê ë è 8 \u2026 \u2014 \u2013 = ð ! ¡ f \ufb01 5 \ufb02 \u0192 4 \u2044
+g ß \u2039 \u203a ` > « » h - \u02dd i í î ï ì j k l \u0142 < ¬
+m \u2212 \u00B5 × n 9 ñ # o ó ô ö \u0153 ò 1 ½ ¼ ¹ ª º ø õ
+p \u00b6 ( ) % \u2030 . · + ±
+q ? ¿ " \u201e \u201c \u201d \u2018 \u2019 \u201a '
+r ® \u02da s \u0161 \u00A7 ; 7 6 / £ t þ 3 ¾ ³ \u02dc \u2122 2 ²
+u ú û ü ù _ v w x y ý ÿ ¥ z \u017e 0
+
+\cfg{input-charset}{ASCII}
+
+Testing ligatures in normal (fi), emphasised (\e{fi}), strong
+(\s{fi}), code (\c{fi}) and weak code (\cw{fi}). The latter two should
+not be ligated.
+
+\c Also in a code paragraph (fi) with bold (fi) and italic (fi).
+\e                                          bb              ii
+\c There should be no ligation there.
+
+The following pair of characters map to different glyphs with the same name in
+some Microsoft TrueType fonts: \u0394{(missing)} \u2206{(missing)}
+
+\S{subhead} First subheading
+
+So here's a \I{subheading}\I{subsection}subsection. Just
+incidentally, \q{this} is in quotes. \ii{Those} quotes had better work
+in all formats.
+
+We'll try for some Unicode here: \i{Schr\u00F6{oe}dinger}.
+
+An index tag containing non-alternatived Unicode: \i{\u00BFChe?}
+
+An invisible index tag: \I{she seems to have an invisible tag}yeah.
+
+An index tag inside another tag: jackdaws love my \e{big \i{sphinx}}
+of quartz.
+
+Similarly, we should support things like hyperlinks
+\e{\W{http://www.tartarus.org/}{at the beginning} of emphasised sections},
+and \e{in the \W{http://www.tartarus.org/}{middle} of them}, and also
+\e{at the \W{http://home.att.net/~cecw/lastpage.htm}{end}}.
+
+Try that all over against with \c{\\s}: hyperlinks
+\s{\W{http://www.tartarus.org/}{at the beginning} of strong sections},
+and \s{in the \W{http://www.tartarus.org/}{middle} of them}, and also
+\s{at the \W{http://home.att.net/~cecw/lastpage.htm}{end}}.
+
+Here's a hyperlink containing some special characters:
+\W{http://a<b&c>d/}{here}. (Not that it'll \e{work}, but you can at
+least determine that it's been correctly escaped by inspection of
+the output HTML.)
+
+\#{FIXME: Unfortunately, we still don't quite do the right thing with
+references:
+How about a \e{reference to \k{subhead} here}? And at
+\e{the end: \k{subhead}} and \e{\k{subhead}: the start}?
+}
+
+\S2{sub-sub}{Florble} Smaller heading still
+
+A tiny section. Awww. How cute. Actually, this one's a \e{florble},
+and here's a reference to it: \k{sub-sub}.
+
+\A{app} Needless appendix
+
+\# \cfg{winhelp-topic}{Y5VQEXZQVJ} (uncomment this and it clashes)
+
+Here's an \i{appendix}, for no terribly good reason at all. See
+__\k{book}__ (please excuse those underscores, I'm testing
+whitespace).
+
+It also contains a \W{http://www.tartarus.org/}{hyperlink}.
+
+Also I'm going to index \i\c{-output} to ensure that its two
+components are displayed as a joined-up code fragment in the index.
+
+Here are \I{testone}some \I{testtwo}subsections \I{testthree}with
+silly chapter titles and interesting use of Unicode. The Unicode
+oddities are in the titles rather than the body text because that
+way I get to test their handling in the PDF document outline.
+
+\H{app-one} The 1024 \u00D7{x} 768 screen resolution
+
+Err.
+
+\H{app-two} How about Spongletech\u2122{(TM)}?
+
+Umm.
+
+\# I'm going to label one of these with a carefully chosen fragment
+\# name "i1", because I know this will also be generated as an index
+\# fragment name and this allows me to test the fragment name clash
+\# detection.
+\#
+\# To actually run this test you need to configure html-leaf-level
+\# to 0 and html-template-fragment to %k.
+
+\H{i1} Or just Erd\u0151{\u00F6{o}}s?
+
+Ahh.
+
+\H{app-\\two} Section with inconvenient keyword
+
+If you apply this file together with \cw{doc/chm.but}, this section
+should test \cw{html_sanitise_filename()}.
+
+\U Bibliography
+
+\B{book} Some text describing a book.
+
+\B{nocite} Some text describing a book. This text should appear in
+the document even though there is no \cw{\\k} citing it.
+
+\BR{book} [SillyCitation]
+\BR{uncited} Badger.
+
+\nocite{nocite}
+
+\B{uncited} If this text appears, there's an actual error.
+
+\# This is a comment.
+
+\# Now for the index section.
+
+\IM{she seems to have an invisible tag}{appendix} Invisible tags
+and/or appendices
+
+\# The display forms of these three index terms differ only in case.
+\# This is a fiddly special case in the Windows Help backend,
+\# because Windows Help's index mechanism is case-insensitive...
+
+\IM{testone} Test
+\IM{testtwo} TesT
+\IM{testthree} test

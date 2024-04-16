@@ -1,0 +1,709 @@
+\IM{Windows Help} Windows Help
+\IM{Windows Help} Help, Windows
+
+\IM{HTML Help} HTML Help
+\IM{HTML Help} Windows HTML Help
+\IM{HTML Help} MS HTML Help
+\IM{HTML Help} Microsoft HTML Help
+\IM{HTML Help} \cw{.chm} files
+
+\IM{Help compiler} Help compiler, lack of need for
+
+\IM{plain text} plain text
+\IM{plain text} text, plain
+
+\IM{text width} text width
+\IM{text width} width, of text
+\IM{text width} line length
+\IM{text width} length of lines
+
+\IM{output file name} output file name
+\IM{output file name} file name, output
+
+\IM{\\cfg\{text-filename\}} \c{text-filename} configuration directive
+\IM{\\cfg\{text-filename\}} \cw{\\cfg\{text-filename\}}
+
+\IM{\\cfg\{man-filename\}} \c{man-filename} configuration directive
+\IM{\\cfg\{man-filename\}} \cw{\\cfg\{man-filename\}}
+
+\IM{\\cfg\{info-filename\}} \c{info-filename} configuration directive
+\IM{\\cfg\{info-filename\}} \cw{\\cfg\{info-filename\}}
+
+\IM{\\cfg\{info-dir-entry\}} \c{info-dir-entry} configuration directive
+\IM{\\cfg\{info-dir-entry\}} \cw{\\cfg\{info-dir-entry\}}
+
+\IM{\\cfg\{info-max-file-size\}} \c{info-max-file-size} configuration directive
+\IM{\\cfg\{info-max-file-size\}} \cw{\\cfg\{info-max-file-size\}}
+
+\IM{\\cfg\{info-width\}} \c{info-width} configuration directive
+\IM{\\cfg\{info-width\}} \cw{\\cfg\{info-width\}}
+
+\IM{\\cfg\{info-indent-code\}} \c{info-indent-code} configuration
+directive
+\IM{\\cfg\{info-indent-code\}} \cw{\\cfg\{info-indent-code\}}
+
+\IM{\\cfg\{info-index-width\}} \c{info-index-width} configuration
+directive
+\IM{\\cfg\{info-index-width\}} \cw{\\cfg\{info-index-width\}}
+
+\IM{\\cfg\{info-list-indent\}} \c{info-list-indent} configuration
+directive
+\IM{\\cfg\{info-list-indent\}} \cw{\\cfg\{info-list-indent\}}
+
+\IM{\\cfg\{info-listitem-indent\}} \c{info-listitem-indent}
+configuration directive
+\IM{\\cfg\{info-listitem-indent\}} \cw{\\cfg\{info-listitem-indent\}}
+
+\IM{\\cfg\{info-section-suffix\}} \c{info-section-suffix}
+configuration directive
+\IM{\\cfg\{info-section-suffix\}} \cw{\\cfg\{info-section-suffix\}}
+
+\IM{\\cfg\{info-title-underline\}} \c{info-title-underline} configuration
+directive
+\IM{\\cfg\{info-title-underline\}} \cw{\\cfg\{info-title-underline\}}
+
+\IM{\\cfg\{info-chapter-underline\}} \c{info-chapter-underline} configuration
+directive
+\IM{\\cfg\{info-chapter-underline\}} \cw{\\cfg\{info-chapter-underline\}}
+
+\IM{\\cfg\{info-section-underline\}} \c{info-section-underline} configuration
+directive
+\IM{\\cfg\{info-section-underline\}} \cw{\\cfg\{info-section-underline\}}
+
+\IM{\\cfg\{info-charset\}} \c{info-charset} configuration directive
+\IM{\\cfg\{info-charset\}} \cw{\\cfg\{info-charset\}}
+
+\IM{\\cfg\{info-bullet\}} \c{info-bullet} configuration directive
+\IM{\\cfg\{info-bullet\}} \cw{\\cfg\{info-bullet\}}
+
+\IM{\\cfg\{info-rule\}} \c{info-rule} configuration directive
+\IM{\\cfg\{info-rule\}} \cw{\\cfg\{info-rule\}}
+
+\IM{\\cfg\{info-list-suffix\}} \c{info-list-suffix} configuration
+directive
+\IM{\\cfg\{info-list-suffix\}} \cw{\\cfg\{info-list-suffix\}}
+
+\IM{\\cfg\{info-emphasis\}} \c{info-emphasis} configuration directive
+\IM{\\cfg\{info-emphasis\}} \cw{\\cfg\{info-emphasis\}}
+
+\IM{\\cfg\{info-quotes\}} \c{info-quotes} configuration directive
+\IM{\\cfg\{info-quotes\}} \cw{\\cfg\{info-quotes\}}
+
+\IM{\\cfg\{winhelp-filename\}} \c{winhelp-filename} configuration directive
+\IM{\\cfg\{winhelp-filename\}} \cw{\\cfg\{winhelp-filename\}}
+
+\IM{\\cfg\{winhelp-bullet\}} \c{winhelp-bullet} configuration directive
+\IM{\\cfg\{winhelp-bullet\}} \cw{\\cfg\{winhelp-bullet\}}
+
+\IM{\\cfg\{winhelp-quotes\}} \c{winhelp-quotes} configuration directive
+\IM{\\cfg\{winhelp-quotes\}} \cw{\\cfg\{winhelp-quotes\}}
+
+\IM{\\cfg\{winhelp-contents-titlepage\}} \c{winhelp-contents-titlepage}
+configuration directive
+\IM{\\cfg\{winhelp-contents-titlepage\}}
+\cw{\\cfg\{winhelp-contents-titlepage\}}
+
+\IM{\\cfg\{winhelp-section-suffix\}} \c{winhelp-section-suffix} configuration directive
+\IM{\\cfg\{winhelp-section-suffix\}} \cw{\\cfg\{winhelp-section-suffix\}}
+
+\IM{\\cfg\{winhelp-list-suffix\}} \c{winhelp-list-suffix} configuration directive
+\IM{\\cfg\{winhelp-list-suffix\}} \cw{\\cfg\{winhelp-list-suffix\}}
+
+\IM{\\cfg\{xhtml-anything\}} \c{xhtml-}\e{anything} configuration directives
+\IM{\\cfg\{xhtml-anything\}} \cw{\\cfg\{xhtml-}\e{anything}\cw{\}}
+
+\IM{\\cfg\{html-contents-filename\}} \c{html-contents-filename} configuration directive
+\IM{\\cfg\{html-contents-filename\}} \cw{\\cfg\{html-contents-filename\}}
+
+\IM{\\cfg\{html-index-filename\}} \c{html-index-filename} configuration directive
+\IM{\\cfg\{html-index-filename\}} \cw{\\cfg\{html-index-filename\}}
+
+\IM{\\cfg\{html-template-filename\}} \c{html-template-filename} configuration directive
+\IM{\\cfg\{html-template-filename\}} \cw{\\cfg\{html-template-filename\}}
+
+\IM{\\cfg\{html-single-filename\}} \c{html-single-filename} configuration directive
+\IM{\\cfg\{html-single-filename\}} \cw{\\cfg\{html-single-filename\}}
+
+\IM{\\cfg\{html-template-fragment\}} \c{html-template-fragment} configuration directive
+\IM{\\cfg\{html-template-fragment\}} \cw{\\cfg\{html-template-fragment\}}
+
+\IM{\\cfg\{text-width\}} \c{text-width} configuration directive
+\IM{\\cfg\{text-width\}} \cw{\\cfg\{text-width\}}
+
+\IM{\\cfg\{text-indent\}} \c{text-indent} configuration directive
+\IM{\\cfg\{text-indent\}} \cw{\\cfg\{text-indent\}}
+
+\IM{\\cfg\{text-indent-code\}} \c{text-indent-code} configuration
+directive
+\IM{\\cfg\{text-indent-code\}} \cw{\\cfg\{text-indent-code\}}
+
+\IM{\\cfg\{text-list-indent\}} \c{text-list-indent} configuration
+directive
+\IM{\\cfg\{text-list-indent\}} \cw{\\cfg\{text-list-indent\}}
+
+\IM{\\cfg\{text-listitem-indent\}} \c{text-listitem-indent}
+configuration directive
+\IM{\\cfg\{text-listitem-indent\}} \cw{\\cfg\{text-listitem-indent\}}
+
+\IM{\\cfg\{text-indent-preamble\}} \c{text-indent-preamble}
+configuration directive
+\IM{\\cfg\{text-indent-preamble\}} \cw{\\cfg\{text-indent-preamble\}}
+
+\IM{\\cfg\{text-title-align\}} \c{text-title-align} configuration
+directive
+\IM{\\cfg\{text-title-align\}} \cw{\\cfg\{text-title-align\}}
+
+\IM{\\cfg\{text-title-underline\}} \c{text-title-underline}
+configuration directive
+\IM{\\cfg\{text-title-underline\}} \cw{\\cfg\{text-title-underline\}}
+
+\IM{\\cfg\{text-chapter-align\}} \c{text-chapter-align}
+configuration directive
+\IM{\\cfg\{text-chapter-align\}} \cw{\\cfg\{text-chapter-align\}}
+
+\IM{\\cfg\{text-chapter-underline\}} \c{text-chapter-underline}
+configuration directive
+\IM{\\cfg\{text-chapter-underline\}}
+\cw{\\cfg\{text-chapter-underline\}}
+
+\IM{\\cfg\{text-chapter-numeric\}} \c{text-chapter-numeric}
+configuration directive
+\IM{\\cfg\{text-chapter-numeric\}} \cw{\\cfg\{text-chapter-numeric\}}
+
+\IM{\\cfg\{text-chapter-suffix\}} \c{text-chapter-suffix}
+configuration directive
+\IM{\\cfg\{text-chapter-suffix\}} \cw{\\cfg\{text-chapter-suffix\}}
+
+\IM{\\cfg\{text-section-align\}} \c{text-section-align}
+configuration directive
+\IM{\\cfg\{text-section-align\}} \cw{\\cfg\{text-section-align\}}
+
+\IM{\\cfg\{text-section-underline\}} \c{text-section-underline}
+configuration directive
+\IM{\\cfg\{text-section-underline\}}
+\cw{\\cfg\{text-section-underline\}}
+
+\IM{\\cfg\{text-section-numeric\}} \c{text-section-numeric}
+configuration directive
+\IM{\\cfg\{text-section-numeric\}} \cw{\\cfg\{text-section-numeric\}}
+
+\IM{\\cfg\{text-section-suffix\}} \c{text-section-suffix}
+configuration directive
+\IM{\\cfg\{text-section-suffix\}} \cw{\\cfg\{text-section-suffix\}}
+
+\IM{\\cfg\{text-list-suffix\}} \c{text-list-suffix} configuration directive
+\IM{\\cfg\{text-list-suffix\}} \cw{\\cfg\{text-list-suffix\}}
+
+\IM{\\cfg\{text-versionid\}} \c{text-versionid} configuration
+directive
+\IM{\\cfg\{text-versionid\}} \cw{\\cfg\{text-versionid\}}
+
+\IM{\\cfg\{text-charset\}} \c{text-charset} configuration directive
+\IM{\\cfg\{text-charset\}} \cw{\\cfg\{text-charset\}}
+
+\IM{\\cfg\{text-bullet\}} \c{text-bullet} configuration directive
+\IM{\\cfg\{text-bullet\}} \cw{\\cfg\{text-bullet\}}
+
+\IM{\\cfg\{text-rule\}} \c{text-rule} configuration directive
+\IM{\\cfg\{text-rule\}} \cw{\\cfg\{text-rule\}}
+
+\IM{\\cfg\{text-quotes\}} \c{text-quotes} configuration directive
+\IM{\\cfg\{text-quotes\}} \cw{\\cfg\{text-quotes\}}
+
+\IM{\\cfg\{text-emphasis\}} \c{text-emphasis} configuration directive
+\IM{\\cfg\{text-emphasis\}} \cw{\\cfg\{text-emphasis\}}
+
+\IM{\\cfg\{html-leaf-level\}} \c{html-leaf-level} configuration
+directive
+\IM{\\cfg\{html-leaf-level\}} \cw{\\cfg\{html-leaf-level\}}
+
+\IM{\\cfg\{html-contents-depth\}} \c{html-contents-depth}
+configuration directive
+\IM{\\cfg\{html-contents-depth\}} \cw{\\cfg\{html-contents-depth\}}
+
+\IM{\\cfg\{html-leaf-contains-contents\}}
+\c{html-leaf-contains-contents} configuration directive
+\IM{\\cfg\{html-leaf-contains-contents\}}
+\cw{\\cfg\{html-leaf-contains-contents\}}
+
+\IM{\\cfg\{html-leaf-smallest-contents\}}
+\c{html-leaf-smallest-contents} configuration directive
+\IM{\\cfg\{html-leaf-smallest-contents\}}
+\cw{\\cfg\{html-leaf-smallest-contents\}}
+
+\IM{\\cfg\{html-head-end\}} \c{html-head-end} configuration
+directive
+\IM{\\cfg\{html-head-end\}} \cw{\\cfg\{html-head-end\}}
+
+\IM{\\cfg\{html-local-head\}} \c{html-local-head} configuration directive
+\IM{\\cfg\{html-local-head\}} \cw{\\cfg\{html-local-head\}}
+
+\IM{\\cfg\{html-body-tag\}} \c{html-body-tag} configuration
+directive
+\IM{\\cfg\{html-body-tag\}} \cw{\\cfg\{html-body-tag\}}
+
+\IM{\\cfg\{html-body-start\}} \c{html-body-start} configuration
+directive
+\IM{\\cfg\{html-body-start\}} \cw{\\cfg\{html-body-start\}}
+
+\IM{\\cfg\{html-body-end\}} \c{html-body-end} configuration
+directive
+\IM{\\cfg\{html-body-end\}} \cw{\\cfg\{html-body-end\}}
+
+\IM{\\cfg\{html-address-start\}} \c{html-address-start}
+configuration directive
+\IM{\\cfg\{html-address-start\}} \cw{\\cfg\{html-address-start\}}
+
+\IM{\\cfg\{html-address-end\}} \c{html-address-end} configuration
+directive
+\IM{\\cfg\{html-address-end\}} \cw{\\cfg\{html-address-end\}}
+
+\IM{\\cfg\{html-navigation-attributes\}}
+\c{html-navigation-attributes} configuration directive
+\IM{\\cfg\{html-navigation-attributes\}}
+\cw{\\cfg\{html-navigation-attributes\}}
+
+\IM{\\cfg\{html-chapter-numeric\}} \c{html-chapter-numeric}
+configuration directive
+\IM{\\cfg\{html-chapter-numeric\}}
+\cw{\\cfg\{html-chapter-numeric\}}
+
+\IM{\\cfg\{html-chapter-suffix\}} \c{html-chapter-suffix}
+configuration directive
+\IM{\\cfg\{html-chapter-suffix\}} \cw{\\cfg\{html-chapter-suffix\}}
+
+\IM{\\cfg\{html-section-numeric\}} \c{html-section-numeric}
+configuration directive
+\IM{\\cfg\{html-section-numeric\}}
+\cw{\\cfg\{html-section-numeric\}}
+
+\IM{\\cfg\{html-section-suffix\}} \c{html-section-suffix}
+configuration directive
+\IM{\\cfg\{html-section-suffix\}} \cw{\\cfg\{html-section-suffix\}}
+
+\IM{\\cfg\{html-preamble-text\}} \c{html-preamble-text} configuration directive
+\IM{\\cfg\{html-preamble-text\}} \cw{\\cfg\{html-preamble-text\}}
+
+\IM{\\cfg\{html-contents-text\}} \c{html-contents-text} configuration directive
+\IM{\\cfg\{html-contents-text\}} \cw{\\cfg\{html-contents-text\}}
+
+\IM{\\cfg\{html-index-text\}} \c{html-index-text} configuration directive
+\IM{\\cfg\{html-index-text\}} \cw{\\cfg\{html-index-text\}}
+
+\IM{\\cfg\{html-title-separator\}} \c{html-title-separator} configuration directive
+\IM{\\cfg\{html-title-separator\}} \cw{\\cfg\{html-title-separator\}}
+
+\IM{\\cfg\{html-index-main-separator\}} \c{html-index-main-separator} configuration directive
+\IM{\\cfg\{html-index-main-separator\}} \cw{\\cfg\{html-index-main-separator\}}
+
+\IM{\\cfg\{html-index-multiple-separator\}} \c{html-index-multiple-separator} configuration directive
+\IM{\\cfg\{html-index-multiple-separator\}} \cw{\\cfg\{html-index-multiple-separator\}}
+
+\IM{\\cfg\{html-pre-versionid\}} \c{html-pre-versionid} configuration directive
+\IM{\\cfg\{html-pre-versionid\}} \cw{\\cfg\{html-pre-versionid\}}
+
+\IM{\\cfg\{html-post-versionid\}} \c{html-post-versionid} configuration directive
+\IM{\\cfg\{html-post-versionid\}} \cw{\\cfg\{html-post-versionid\}}
+
+\IM{\\cfg\{html-nav-prev-text\}} \c{html-nav-prev-text} configuration directive
+\IM{\\cfg\{html-nav-prev-text\}} \cw{\\cfg\{html-nav-prev-text\}}
+
+\IM{\\cfg\{html-nav-next-text\}} \c{html-nav-next-text} configuration directive
+\IM{\\cfg\{html-nav-next-text\}} \cw{\\cfg\{html-nav-next-text\}}
+
+\IM{\\cfg\{html-nav-up-text\}} \c{html-nav-up-text} configuration directive
+\IM{\\cfg\{html-nav-up-text\}} \cw{\\cfg\{html-nav-up-text\}}
+
+\IM{\\cfg\{html-nav-separator\}} \c{html-nav-separator} configuration directive
+\IM{\\cfg\{html-nav-separator\}} \cw{\\cfg\{html-nav-separator\}}
+
+\IM{\\cfg\{html-charset\}} \c{html-charset} configuration directive, lack of
+\IM{\\cfg\{html-charset\}} \cw{\\cfg\{html-charset\}}, lack of
+
+\IM{\\cfg\{html-output-charset\}} \c{html-output-charset} configuration directive
+\IM{\\cfg\{html-output-charset\}} \cw{\\cfg\{html-output-charset\}}
+
+\IM{\\cfg\{html-restrict-charset\}} \c{html-restrict-charset} configuration directive
+\IM{\\cfg\{html-restrict-charset\}} \cw{\\cfg\{html-restrict-charset\}}
+
+\IM{\\cfg\{html-quotes\}} \c{html-quotes} configuration directive
+\IM{\\cfg\{html-quotes\}} \cw{\\cfg\{html-quotes\}}
+
+\IM{\\cfg\{html-version\}} \c{html-version} configuration directive
+\IM{\\cfg\{html-version\}} \cw{\\cfg\{html-version\}}
+
+\IM{\\cfg\{html-versionid\}} \c{html-versionid} configuration
+directive
+\IM{\\cfg\{html-versionid\}} \cw{\\cfg\{html-versionid\}}
+
+\IM{\\cfg\{html-suppress-address\}} \c{html-suppress-address}
+configuration directive
+\IM{\\cfg\{html-suppress-address\}}
+\cw{\\cfg\{html-suppress-address\}}
+
+\IM{\\cfg\{html-suppress-navlinks\}} \c{html-suppress-navlinks}
+configuration directive
+\IM{\\cfg\{html-suppress-navlinks\}}
+\cw{\\cfg\{html-suppress-navlinks\}}
+
+\IM{\\cfg\{html-rellinks\}} \c{html-rellinks} configuration directive
+\IM{\\cfg\{html-rellinks\}} \cw{\\cfg\{html-rellinks\}}
+
+\IM{\\cfg\{html-author\}} \c{html-author} configuration directive
+\IM{\\cfg\{html-author\}} \cw{\\cfg\{html-author\}}
+
+\IM{\\cfg\{html-description\}} \c{html-description} configuration
+directive
+\IM{\\cfg\{html-description\}} \cw{\\cfg\{html-description\}}
+
+\IM{\\cfg\{html-mshtmlhelp-project\}} \c{html-mshtmlhelp-project}
+configuration directive
+\IM{\\cfg\{html-mshtmlhelp-project\}} \cw{\\cfg\{html-mshtmlhelp-project\}}
+
+\IM{\\cfg\{html-mshtmlhelp-chm\}} \c{html-mshtmlhelp-chm}
+configuration directive
+\IM{\\cfg\{html-mshtmlhelp-chm\}} \cw{\\cfg\{html-mshtmlhelp-chm\}}
+
+\IM{\\cfg\{html-mshtmlhelp-contents\}} \c{html-mshtmlhelp-contents}
+configuration directive
+\IM{\\cfg\{html-mshtmlhelp-contents\}} \cw{\\cfg\{html-mshtmlhelp-contents\}}
+
+\IM{\\cfg\{html-mshtmlhelp-index\}} \c{html-mshtmlhelp-index}
+configuration directive
+\IM{\\cfg\{html-mshtmlhelp-index\}} \cw{\\cfg\{html-mshtmlhelp-index\}}
+
+\IM{\\cfg\{winhelp-topic\}} \c{winhelp-topic} configuration directive
+\IM{\\cfg\{winhelp-topic\}} \cw{\\cfg\{winhelp-topic\}}
+
+\IM{\\cfg\{man-identity\}} \c{man-identity} configuration directive
+\IM{\\cfg\{man-identity\}} \cw{\\cfg\{man-identity\}}
+
+\IM{\\cfg\{man-headnumbers\}} \c{man-headnumbers} configuration
+directive
+\IM{\\cfg\{man-headnumbers\}} \cw{\\cfg\{man-headnumbers\}}
+
+\IM{\\cfg\{man-mindepth\}} \c{man-mindepth} configuration directive
+\IM{\\cfg\{man-mindepth\}} \cw{\\cfg\{man-mindepth\}}
+
+\IM{\\cfg\{man-charset\}} \c{man-charset} configuration directive
+\IM{\\cfg\{man-charset\}} \cw{\\cfg\{man-charset\}}
+
+\IM{\\cfg\{man-bullet\}} \c{man-bullet} configuration directive
+\IM{\\cfg\{man-bullet\}} \cw{\\cfg\{man-bullet\}}
+
+\IM{\\cfg\{man-rule\}} \c{man-rule} configuration directive
+\IM{\\cfg\{man-rule\}} \cw{\\cfg\{man-rule\}}
+
+\IM{\\cfg\{man-quotes\}} \c{man-quotes} configuration directive
+\IM{\\cfg\{man-quotes\}} \cw{\\cfg\{man-quotes\}}
+
+\IM{\\cfg\{ps-filename\}} \c{ps-filename} configuration directive
+\IM{\\cfg\{ps-filename\}} \cw{\\cfg\{ps-filename\}}
+
+\IM{\\cfg\{pdf-filename\}} \c{pdf-filename} configuration directive
+\IM{\\cfg\{pdf-filename\}} \cw{\\cfg\{pdf-filename\}}
+
+\IM{\\cfg\{paper-page-width\}} \c{paper-page-width} configuration directive
+\IM{\\cfg\{paper-page-width\}} \cw{\\cfg\{paper-page-width\}}
+
+\IM{\\cfg\{paper-page-height\}} \c{paper-page-height} configuration directive
+\IM{\\cfg\{paper-page-height\}} \cw{\\cfg\{paper-page-height\}}
+
+\IM{\\cfg\{paper-left-margin\}} \c{paper-left-margin} configuration directive
+\IM{\\cfg\{paper-left-margin\}} \cw{\\cfg\{paper-left-margin\}}
+
+\IM{\\cfg\{paper-top-margin\}} \c{paper-top-margin} configuration directive
+\IM{\\cfg\{paper-top-margin\}} \cw{\\cfg\{paper-top-margin\}}
+
+\IM{\\cfg\{paper-right-margin\}} \c{paper-right-margin} configuration directive
+\IM{\\cfg\{paper-right-margin\}} \cw{\\cfg\{paper-right-margin\}}
+
+\IM{\\cfg\{paper-bottom-margin\}} \c{paper-bottom-margin} configuration directive
+\IM{\\cfg\{paper-bottom-margin\}} \cw{\\cfg\{paper-bottom-margin\}}
+
+\IM{\\cfg\{paper-list-indent\}} \c{paper-list-indent} configuration directive
+\IM{\\cfg\{paper-list-indent\}} \cw{\\cfg\{paper-list-indent\}}
+
+\IM{\\cfg\{paper-listitem-indent\}} \c{paper-listitem-indent} configuration directive
+\IM{\\cfg\{paper-listitem-indent\}} \cw{\\cfg\{paper-listitem-indent\}}
+
+\IM{\\cfg\{paper-quote-indent\}} \c{paper-quote-indent} configuration directive
+\IM{\\cfg\{paper-quote-indent\}} \cw{\\cfg\{paper-quote-indent\}}
+
+\IM{\\cfg\{paper-base-leading\}} \c{paper-base-leading} configuration directive
+\IM{\\cfg\{paper-base-leading\}} \cw{\\cfg\{paper-base-leading\}}
+
+\IM{\\cfg\{paper-base-para-spacing\}} \c{paper-base-para-spacing} configuration directive
+\IM{\\cfg\{paper-base-para-spacing\}} \cw{\\cfg\{paper-base-para-spacing\}}
+
+\IM{\\cfg\{paper-chapter-top-space\}} \c{paper-chapter-top-space} configuration directive
+\IM{\\cfg\{paper-chapter-top-space\}} \cw{\\cfg\{paper-chapter-top-space\}}
+
+\IM{\\cfg\{paper-sect-num-left-space\}} \c{paper-sect-num-left-space} configuration directive
+\IM{\\cfg\{paper-sect-num-left-space\}} \cw{\\cfg\{paper-sect-num-left-space\}}
+
+\IM{\\cfg\{paper-chapter-underline-depth\}} \c{paper-chapter-underline-depth} configuration directive
+\IM{\\cfg\{paper-chapter-underline-depth\}} \cw{\\cfg\{paper-chapter-underline-depth\}}
+
+\IM{\\cfg\{paper-chapter-underline-thickness\}} \c{paper-chapter-underline-thickness} configuration directive
+\IM{\\cfg\{paper-chapter-underline-thickness\}} \cw{\\cfg\{paper-chapter-underline-thickness\}}
+
+\IM{\\cfg\{paper-rule-thickness\}} \c{paper-rule-thickness} configuration directive
+\IM{\\cfg\{paper-rule-thickness\}} \cw{\\cfg\{paper-rule-thickness\}}
+
+\IM{\\cfg\{paper-contents-indent-step\}} \c{paper-contents-indent-step} configuration directive
+\IM{\\cfg\{paper-contents-indent-step\}} \cw{\\cfg\{paper-contents-indent-step\}}
+
+\IM{\\cfg\{paper-contents-margin\}} \c{paper-contents-margin} configuration directive
+\IM{\\cfg\{paper-contents-margin\}} \cw{\\cfg\{paper-contents-margin\}}
+
+\IM{\\cfg\{paper-leader-separation\}} \c{paper-leader-separation} configuration directive
+\IM{\\cfg\{paper-leader-separation\}} \cw{\\cfg\{paper-leader-separation\}}
+
+\IM{\\cfg\{paper-index-gutter\}} \c{paper-index-gutter} configuration directive
+\IM{\\cfg\{paper-index-gutter\}} \cw{\\cfg\{paper-index-gutter\}}
+
+\IM{\\cfg\{paper-index-minsep\}} \c{paper-index-minsep} configuration directive
+\IM{\\cfg\{paper-index-minsep\}} \cw{\\cfg\{paper-index-minsep\}}
+
+\IM{\\cfg\{paper-footer-distance\}} \c{paper-footer-distance} configuration directive
+\IM{\\cfg\{paper-footer-distance\}} \cw{\\cfg\{paper-footer-distance\}}
+
+\IM{\\cfg\{paper-base-fonts\}} \c{paper-base-fonts} configuration directive
+\IM{\\cfg\{paper-base-fonts\}} \cw{\\cfg\{paper-base-fonts\}}
+
+\IM{\\cfg\{paper-base-font-size\}} \c{paper-base-font-size} configuration directive
+\IM{\\cfg\{paper-base-font-size\}} \cw{\\cfg\{paper-base-font-size\}}
+
+\IM{\\cfg\{paper-title-fonts\}} \c{paper-title-fonts} configuration directive
+\IM{\\cfg\{paper-title-fonts\}} \cw{\\cfg\{paper-title-fonts\}}
+
+\IM{\\cfg\{paper-title-font-size\}} \c{paper-title-font-size} configuration directive
+\IM{\\cfg\{paper-title-font-size\}} \cw{\\cfg\{paper-title-font-size\}}
+
+\IM{\\cfg\{paper-chapter-fonts\}} \c{paper-chapter-fonts} configuration directive
+\IM{\\cfg\{paper-chapter-fonts\}} \cw{\\cfg\{paper-chapter-fonts\}}
+
+\IM{\\cfg\{paper-chapter-font-size\}} \c{paper-chapter-font-size} configuration directive
+\IM{\\cfg\{paper-chapter-font-size\}} \cw{\\cfg\{paper-chapter-font-size\}}
+
+\IM{\\cfg\{paper-section-fonts\}} \c{paper-section-fonts} configuration directive
+\IM{\\cfg\{paper-section-fonts\}} \cw{\\cfg\{paper-section-fonts\}}
+
+\IM{\\cfg\{paper-section-font-size\}} \c{paper-section-font-size} configuration directive
+\IM{\\cfg\{paper-section-font-size\}} \cw{\\cfg\{paper-section-font-size\}}
+
+\IM{\\cfg\{paper-code-fonts\}} \c{paper-code-fonts} configuration directive
+\IM{\\cfg\{paper-code-fonts\}} \cw{\\cfg\{paper-code-fonts\}}
+
+\IM{\\cfg\{paper-code-font-size\}} \c{paper-code-font-size} configuration directive
+\IM{\\cfg\{paper-code-font-size\}} \cw{\\cfg\{paper-code-font-size\}}
+
+\IM{\\cfg\{paper-index-columns\}} \c{paper-index-columns} configuration directive
+\IM{\\cfg\{paper-index-columns\}} \cw{\\cfg\{paper-index-columns\}}
+
+\IM{\\cfg\{paper-pagenum-font-size\}} \c{paper-pagenum-font-size} configuration directive
+\IM{\\cfg\{paper-pagenum-font-size\}} \cw{\\cfg\{paper-pagenum-font-size\}}
+
+\IM{\\cfg\{paper-bullet\}} \c{paper-bullet} configuration directive
+\IM{\\cfg\{paper-bullet\}} \cw{\\cfg\{paper-bullet\}}
+
+\IM{\\cfg\{paper-quotes\}} \c{paper-quotes} configuration directive
+\IM{\\cfg\{paper-quotes\}} \cw{\\cfg\{paper-quotes\}}
+
+\IM{\\cfg\{chapter\}} \c{chapter} configuration directive
+\IM{\\cfg\{chapter\}} \cw{\\cfg\{chapter\}}
+
+\IM{\\cfg\{section\}} \c{section} configuration directive
+\IM{\\cfg\{section\}} \cw{\\cfg\{section\}}
+
+\IM{\\cfg\{appendix\}} \c{appendix} configuration directive
+\IM{\\cfg\{appendix\}} \cw{\\cfg\{appendix\}}
+
+\IM{\\cfg\{quotes\}} \c{quotes} configuration directive
+\IM{\\cfg\{quotes\}} \cw{\\cfg\{quotes\}}
+
+\IM{\\cfg\{input-charset\}} \c{input-charset} configuration directive
+\IM{\\cfg\{input-charset\}} \cw{\\cfg\{input-charset\}}
+
+\IM{configuring heading display} configuring heading display
+\IM{configuring heading display} headings, configuring display
+\IM{configuring heading display} section headings, configuring display
+\IM{configuring heading display} chapter headings, configuring display
+
+\IM{section headings} section headings
+\IM{section headings} chapter headings
+\IM{section headings} headings
+
+\IM{depth of contents} depth of contents
+\IM{depth of contents} contents, depth
+
+\IM{version ID paragraphs} version IDs
+\IM{version IDs} version IDs
+
+\IM{author} author, of document
+
+\IM{header}{headers} headers
+\IM{header}{headers} page headers
+
+\IM{footer}{footers} footers
+\IM{footer}{footers} page footers
+
+\IM{inline formatting commands} inline formatting commands
+\IM{inline formatting commands} formatting commands, inline
+
+\IM{line break}{line breaks} line breaks
+
+\IM{computer code} code
+\IM{computer code} computer code
+
+\IM{\\e} \c{\\e} command
+\IM{\\s} \c{\\s} command
+\IM{\\c} \c{\\c} command
+\IM{\\cw} \c{\\cw} command
+\IM{\\cq} \c{\\cq} command
+\IM{\\q} \c{\\q} command
+\IM{\\_} \c{\\_} command
+\IM{\\-} \c{\\-} command
+\IM{\\date} \c{\\date} command
+\IM{\\W} \c{\\W} command
+\IM{\\u} \c{\\u} command
+\IM{\\k} \c{\\k} command
+\IM{\\K-upper} \c{\\K} command
+\IM{\\#} \c{\\#} command
+\IM{\\b} \c{\\b} command
+\IM{\\n} \c{\\n} command
+\IM{\\dt} \c{\\dt} command
+\IM{\\dd} \c{\\dd} command
+\IM{\\lcont} \c{\\lcont} command
+\IM{\\rule} \c{\\rule} command
+\IM{\\quote} \c{\\quote} command
+\IM{\\C-upper} \c{\\C} command
+\IM{\\H} \c{\\H} command
+\IM{\\S-upper} \c{\\S} command
+\IM{\\A} \c{\\A} command
+\IM{\\U-upper} \c{\\U} command
+\IM{\\S2} \c{\\S2}, \c{\\S3} commands etc.
+\IM{\\title} \c{\\title} command
+\IM{\\copyright} \c{\\copyright} command
+\IM{\\versionid} \c{\\versionid} command
+\IM{\\B-upper} \c{\\B} command
+\IM{\\BR} \c{\\BR} command
+\IM{\\nocite} \c{\\nocite} command
+\IM{\\i} \c{\\i} command
+\IM{\\i\\c} \c{\\i\\c} combination
+\IM{\\i\\cw} \c{\\i\\cw} combination
+\IM{\\i\\e} \c{\\i\\e} combination
+\IM{\\i\\s} \c{\\i\\s} combination
+\IM{\\I-upper} \c{\\I} command
+\IM{\\ii} \c{\\ii} command
+\IM{\\IM} \c{\\IM} command
+\IM{\\cfg} \c{\\cfg} command
+\IM{\\define} \c{\\define} command
+\IM{\\.} \c{\\.} command
+
+\IM{wrapping paragraphs} wrapping paragraphs
+\IM{wrapping paragraphs} paragraphs, wrapping
+
+\IM{non-breaking hyphens} non-breaking hyphens
+\IM{non-breaking hyphens} hyphens, non-breaking
+
+\IM{non-breaking spaces} non-breaking spaces
+\IM{non-breaking spaces} spaces, non-breaking
+
+\IM{hyperlink}{hyperlinks} hyperlinks
+
+\IM{numbered list}{numbered lists} numbered lists
+\IM{numbered list}{numbered lists} lists, numbered
+
+\IM{bulletted lists} bulletted lists
+\IM{bulletted lists} lists, bulletted
+
+\IM{description lists} description lists
+\IM{description lists} definition lists
+\IM{description lists} lists, description
+
+\IM{paragraph-level commands} commands, paragraph-level
+\IM{paragraph-level commands} paragraph-level formatting commands
+\IM{paragraph-level commands} formatting commands, paragraph-level
+
+\IM{continuing list items} continuing list items
+\IM{continuing list items} list items, continuing
+
+\IM{nested lists} nested lists
+\IM{nested lists} lists, nested
+
+\IM{horizontal rules} rules, horizontal
+\IM{horizontal rules} horizontal rules
+
+\IM{section numbering} section numbering
+\IM{section numbering} chapter numbering
+\IM{section numbering} numbering, of sections
+
+\IM{writing a FAQ} writing FAQs
+\IM{writing a FAQ} FAQs, writing
+
+\IM{renaming sections} renaming sections
+\IM{renaming sections} chapters, renaming
+\IM{renaming sections} sections, renaming
+\IM{renaming sections} appendices, renaming
+
+\IM{command-line options} command-line options
+\IM{command-line options} options, command-line
+
+\IM{--text} \c{--text} command-line option
+\IM{--html} \c{--html} command-line option
+\IM{--xhtml} \c{--xhtml} command-line option
+\IM{--winhelp} \c{--winhelp} command-line option
+\IM{--whlp} \c{--whlp} command-line option
+\IM{--hlp} \c{--hlp} command-line option
+\IM{--man} \c{--man} command-line option
+\IM{--info} \c{--info} command-line option
+\IM{--ps} \c{--ps} command-line option
+\IM{--pdf} \c{--pdf} command-line option
+\IM{-C} \c{-C} command-line option
+\IM{--input-charset} \c{--input-charset} command-line option
+\IM{--list-charsets} \c{--list-charsets} command-line option
+\IM{--list-fonts} \c{--list-fonts} command-line option
+\IM{--help} \c{--help} command-line option
+\IM{--version} \c{--version} command-line option
+\IM{--licence} \c{--licence} command-line option
+\IM{--list-charsets} \c{--list-charsets} command-line option
+\IM{--precise} \c{--precise} command-line option
+
+\IM{command syntax} commands, general syntax of
+\IM{command syntax} formatting commands, general syntax of
+\IM{command syntax} syntax of general formatting commands
+\IM{command syntax} general syntax of formatting commands
+
+\IM{keyword syntax} keywords, syntax of
+\IM{keyword syntax} section keywords, syntax of
+\IM{keyword syntax} chapter keywords, syntax of
+\IM{keyword syntax} heading keywords, syntax of
+\IM{keyword syntax} syntax of keywords
+
+\IM{GNU info} GNU Info
+\IM{GNU info} Info
+
+\IM{INFO-DIR-ENTRY} \cw{INFO-DIR-ENTRY}
+\IM{INFO-DIR-ENTRY} \cw{START-INFO-DIR-ENTRY}
+\IM{INFO-DIR-ENTRY} \cw{END-INFO-DIR-ENTRY}
+
+\IM{%N-upper} \c{%N}
+
+\IM{PDF} PDF
+\IM{PDF} Portable Document Format
+
+\IM{embedding fonts} embedding fonts
+\IM{embedding fonts} fonts, embedding
+
+\IM{Type 1 font} Type 1 fonts
+\IM{Type 1 font} fonts, Type 1
+
+\IM{TrueType font} TrueType fonts
+\IM{TrueType font} fonts, TrueType
+
+\IM{font sizes} font size
+
+\IM{<META NAME="AppleTitle">} \cw{<META NAME="AppleTitle">}
+\IM{<META NAME="AppleTitle">} \cw{AppleTitle}, \cw{<META>} tag

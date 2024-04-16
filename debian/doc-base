@@ -1,0 +1,13 @@
+Document: halibut
+Title: Halibut User Manual
+Abstract: Halibut is a free (MIT-licensed) documentation production system,
+ able to generate multiple output formats from the same input data. This
+ document is its user manual.
+Section: Text
+
+Format: text
+Files: /usr/share/doc/halibut/halibut.txt.gz
+
+Format: HTML
+Index: /usr/share/doc/halibut/html/index.html
+Files: /usr/share/doc/halibut/html/*.html

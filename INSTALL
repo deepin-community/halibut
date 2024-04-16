@@ -1,0 +1,32 @@
+Installation guide for Halibut
+==============================
+
+This file is a guide to building and installing the documentation
+utility `Halibut' from its source archive.
+
+If you are reading this, then you have probably already unpacked the
+source archive somewhere.
+
+Building Halibut
+----------------
+
+Halibut is built using CMake <https://cmake.org/>. To compile in the
+simplest way (on any of Linux, Windows or Mac), run these commands in
+the source directory:
+
+  cmake .
+  cmake --build .
+
+(You'll also need to have a C compiler and some kind of build tool
+installed, such as gcc and make.)
+
+Halibut's source files are intended to be almost entirely portable
+ANSI C. If they fail to compile and run correctly on your compiler,
+this might very well be considered a bug.
+
+Installing Halibut
+------------------
+
+Halibut requires no additional data files. Simply install the
+binary, man page and full documentation in appropriate places for
+your system.

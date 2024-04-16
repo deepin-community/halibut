@@ -1,5 +1,222 @@
-template-repository (1.0-1) unstable; urgency=medium
+halibut (1.3-2) unstable; urgency=medium
 
-  * Initial release
+  * Drop dh-exec, no longer needed with debhelper v13.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Colin Watson <cjwatson@debian.org>  Fri, 24 Dec 2021 23:51:50 +0000
+
+halibut (1.3-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Ignore leading whitespace in an input file (closes: #898923).
+    - Cleanly exit 1 if errors are detected during the document input phase
+      (closes: #898928).
+  * Rework packaging somewhat to handle upstream's switch to CMake.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 31 Oct 2021 00:25:12 +0100
+
+halibut (1.2-5) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update watch file format version to 4.
+  * Bump debhelper from old 12 to 13.
+
+  [ Colin Watson ]
+  * Build-Depends: Drop now-unnecessary versioned constraint on dpkg-dev.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 24 Sep 2021 22:10:33 +0100
+
+halibut (1.2-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from deprecated 9 to 12.
+  * Rely on pre-initialized dpkg-architecture variables.
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 06 Feb 2021 17:36:31 +0000
+
+halibut (1.2-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+
+  [ Colin Watson ]
+  * Use debhelper-compat instead of debian/compat.
+  * Backport from upstream:
+    - Fix build failure with gcc -fno-common (closes: #957328).
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 17 Apr 2020 17:19:39 +0100
+
+halibut (1.2-2) unstable; urgency=medium
+
+  * Move VCS to salsa.debian.org.
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 05 May 2018 14:08:27 +0100
+
+halibut (1.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Use HTTPS for Vcs-* URLs.
+  * Update Homepage, debian/copyright Source, and debian/watch to use HTTPS.
+  * Adjust debian/watch to cope with an extra subdirectory.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 18 Jun 2017 11:30:08 +0100
+
+halibut (1.1-4) unstable; urgency=medium
+
+  * Convert debian/copyright to copyright-format 1.0.
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 16 Jan 2016 22:39:07 +0000
+
+halibut (1.1-3) unstable; urgency=medium
+
+  * Upgrade to debhelper v9.
+  * Build with large file support.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 04 Jan 2016 13:04:23 +0000
+
+halibut (1.1-2) unstable; urgency=medium
+
+  * Implement SOURCE_DATE_EPOCH for reproducible builds.
+  * Build Halibut's own documentation with LC_ALL=C.UTF-8 TZ=UTC to avoid
+    reproducibility problems.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 06 Nov 2015 16:28:26 +0000
+
+halibut (1.1-1) unstable; urgency=medium
+
+  * New upstream release (closes: #782031).
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 21 Aug 2015 16:19:08 +0100
+
+halibut (1.0+svn20090906-9) unstable; urgency=medium
+
+  * Update Vcs-Browser URL for alioth cgit.
+  * Policy version 3.9.6: no changes required.
+  * Simplify debian/rules using /usr/share/dpkg/buildflags.mk.
+  * Build with all hardening options.
+  * Make sure that TEST is not exported to the upstream build, if it happens
+    to be set.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 06 Oct 2014 12:57:11 +0100
+
+halibut (1.0+svn20090906-8) unstable; urgency=medium
+
+  * Switch to git; add Vcs-* fields.
+  * Policy version 3.9.5: no changes required.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 16 Feb 2014 20:33:46 +0000
+
+halibut (1.0+svn20090906-7) unstable; urgency=low
+
+  * Mark halibut Multi-Arch: foreign.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 23 Nov 2012 01:35:07 +0000
+
+halibut (1.0+svn20090906-6) unstable; urgency=low
+
+  * The upstream build system doesn't honour CPPFLAGS or LDFLAGS, but only
+    CFLAGS and LFLAGS.  Adjust our use of dpkg-buildflags accordingly.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 22 Jun 2012 12:46:50 +0100
+
+halibut (1.0+svn20090906-5) unstable; urgency=low
+
+  * Use dpkg-buildflags to set default compiler flags.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 26 Sep 2011 23:23:56 +0100
+
+halibut (1.0+svn20090906-4) unstable; urgency=low
+
+  * Add cross-compiling support.
+
+ -- Colin Watson <cjwatson@debian.org>  Fri, 16 Sep 2011 11:11:37 +0100
+
+halibut (1.0+svn20090906-3) unstable; urgency=low
+
+  * Convert to source format 3.0 (quilt).
+  * Move homepage from Description to Homepage field.
+
+ -- Colin Watson <cjwatson@debian.org>  Wed, 08 Dec 2010 18:06:38 +0000
+
+halibut (1.0+svn20090906-2) unstable; urgency=low
+
+  * Register with vim-addon-manager, and add a README.Debian documenting how
+    to switch Vim syntax highlighting on (closes: #464821).
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 20 Feb 2010 01:32:08 +0000
+
+halibut (1.0+svn20090906-1) unstable; urgency=low
+
+  * New upstream snapshot.
+    - More portable attempt to get a literal U+0027 than r8321, pinched from
+      pod2man.
+    - Revise r8309 to use \- rather than - when trying to emit a literal
+      U+002D (closes: #496063).
+  * Upgrade to debhelper 7.
+  * Drop leading "Applications/" from doc-base Section field, per Lintian.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 07 Sep 2009 01:09:30 +0100
+
+halibut (1.0-1) unstable; urgency=low
+
+  * New upstream release (closes: #409219).
+  * Use dh_install and dh_installman.
+  * Update to menu structure from menu 2.1.35.
+  * Policy version 3.7.2. No changes required.
+  * Fix bashism in upstream Makefile.
+
+ -- Colin Watson <cjwatson@debian.org>  Wed, 14 Nov 2007 09:44:30 +0000
+
+halibut (0.9+svn20050729-1) unstable; urgency=low
+
+  * New upstream snapshot.
+    - Remove erroneous .UC from generated man pages (closes: #320333).
+  * Upgrade to debhelper v4.
+  * Register halibut documentation with doc-base.
+  * Policy version 3.6.2. No changes required.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun,  7 Aug 2005 15:52:37 +0100
+
+halibut (0.9+svn20050412-1) unstable; urgency=low
+
+  * New upstream snapshot.
+    - Fix segfault on empty paragraph (closes: #304204).
+  * Install vim syntax file (':setf halibut' to use); Enhances: vim.
+  * Enhances: enscript.
+  * Avoid building halibut and the HTML documentation twice during the
+    build.
+
+ -- Colin Watson <cjwatson@debian.org>  Tue, 12 Apr 2005 13:31:24 +0100
+
+halibut (0.9+svn20050310-1) unstable; urgency=low
+
+  * New upstream snapshot.
+  * Install highlighting mode for GNU enscript.
+  * Update debian/copyright (new year).
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 10 Apr 2005 11:53:15 +0100
+
+halibut (0.9+cvs20040804-1) unstable; urgency=low
+
+  * New upstream snapshot.
+    - Fix sizeof/lenof confusion in contents.c that caused random segfaults
+      (closes: #262863).
+
+ -- Colin Watson <cjwatson@debian.org>  Wed,  4 Aug 2004 17:42:00 +0100
+
+halibut (0.9+cvs20040801-1) unstable; urgency=low
+
+  * New upstream snapshot.
+    - Add GNU info, PostScript, and PDF output backends.
+    - Fix Windows Help hash calculation on 64-bit systems (closes: #259504).
+  * Add a debian/watch file.
+  * Install Halibut info documentation.
+  * Update debian/copyright.
+  * Update package description to mention new output formats.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun,  1 Aug 2004 18:08:50 +0100
+
+halibut (0.9-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon,  7 Jun 2004 21:26:35 +0100

@@ -1,0 +1,4 @@
+addon: halibut
+description: "allow syntax highlighting for Halibut documents"
+files:
+  - syntax/halibut.vim
